@@ -15,6 +15,9 @@ export default {
 			},
 			fontFamily: {
 				'dm-sans': ['DM Sans Variable', 'sans-serif']
+			},
+			letterSpacing: {
+				'tightest': '-0.1rem'
 			}
 		},
 	},

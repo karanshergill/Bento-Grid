@@ -8,7 +8,7 @@ import "@fontsource-variable/dm-sans";
     <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
-    <title>Frontend Mentor | Bento grid</title>
+    <title>Frontend Mentor | Bento Grid</title>
     <link rel="stylesheet" href="/src/styles/styles.css" />
   </head>
   <body class="bg-slate-100">
@@ -17,27 +17,31 @@ import "@fontsource-variable/dm-sans";
     >
       <!-- grid -->
       <div
-        class="grid grid-cols-1 gap-6 md:grid-cols-4 md:grid-rows-6 max-w-screen-lg max-h-[90vh]"
+        class="flex flex-col px-4 gap-8 md:px-0 md:grid md:gap-4 md:grid-cols-4 md:grid-rows-6 max-w-screen-md max-h-[90vh]"
       >
         <!-- item 1 -->
         <div
-          class="flex flex-col items-center justify-center text-center p-16 rounded-lg bg-purple-dark md:col-span-2 md:row-span-2 md:col-start-2 md:row-start-1"
+          class="flex flex-col items-center justify-center text-center p-8 rounded-lg bg-purple-dark md:p-10 md:col-span-2 md:row-span-2 md:col-start-2 md:row-start-1"
         >
-          <h1 class="text-white text-4xl font-medium">
+          <h1
+            class="text-white text-[44px] md:text-4xl font-medium leading-10 md:leading-9"
+          >
             Social Media <span class="text-yellow-dark">10x</span>
             <span class="italic">Faster</span> with AI
           </h1>
           <img
             src="/illustration-five-stars.webp"
-            class="w-28 mt-4 mb-1"
+            class="w-44 md:w-28 mt-4 mb-1"
             alt="five stars"
           />
-          <p class="text-white text-xs font-light">Over 4,000 5-star reviews</p>
+          <p class="text-white text-base md:text-xs font-light">
+            Over 4,000 5-star reviews
+          </p>
         </div>
 
         <!-- item 2 -->
         <div
-          class="flex flex-col justify-between p-4 rounded-lg bg-white md:row-span-2 md:col-start-2 md:row-start-3 overflow-hidden"
+          class="flex flex-col gap-4 md:gap-0 justify-between p-4 rounded-lg bg-white md:row-span-2 md:col-start-2 md:row-start-3 md:overflow-hidden"
         >
           <img
             src="/illustration-multiple-platforms.webp"
@@ -45,7 +49,7 @@ import "@fontsource-variable/dm-sans";
             class="min-w-52"
           />
           <h2
-            class="text-2xl font-semibold tracking-tight leading-6 text-black pr-12"
+            class="text-2xl md:text-xl font-semibold tracking-tight leading-6 md:leading-5 text-black"
           >
             Manage multiple accounts and platforms.
           </h2>
@@ -53,33 +57,37 @@ import "@fontsource-variable/dm-sans";
 
         <!-- item 3 -->
         <div
-          class="flex flex-col p-4 rounded-lg bg-yellow-dark md:row-span-2 md:col-start-3 md:row-start-3 overflow-hidden"
+          class="flex flex-col p-4 rounded-lg bg-yellow-dark md:row-span-2 md:col-start-3 md:row-start-3 md:overflow-hidden"
         >
           <h2
-            class="text-2xl font-semibold tracking-tight leading-6 text-black pr-12"
+            class="text-2xl font-semibold tracking-tightest leading-6 text-black pr-8"
           >
             Maintain a consistent posting schedule.
           </h2>
           <img
             src="/illustration-consistent-schedule.webp"
             alt="consitent schedule"
-            class="mt-2"
+            class="mt-4 md:mt-8 max-w-52 md:w-full"
           />
         </div>
 
         <!-- item 4 -->
         <div
-          class="flex flex-col p-6 pl-8 rounded-lg bg-purple-light md:row-span-4 md:col-start-4 md:row-start-1 overflow-hidden"
+          class="flex flex-col justify-evenly p-4 rounded-lg bg-purple-light text-center md:text-left md:row-span-4 md:col-start-4 md:row-start-1 md:overflow-hidden"
         >
-          <h2 class="text-2xl font-semibold leading-5">
+          <h2
+            class="text-[22px] font-semibold leading-5 tracking-tight py-4 md:py-0"
+          >
             Schedule to social media.
           </h2>
           <img
             src="/illustration-schedule-posts.webp"
             alt="schedule posts"
-            class="min-w-60 my-4"
+            class="max-w-[264px] md:min-w-[272px] my-2 self-center md:place-self-start"
           />
-          <p class="font-medium tracking-tight leading-5">
+          <p
+            class="text-base leading-5 tracking-tight py-2 px-8 md:text-sm md:leading-4 md:px-0 md:py-0"
+          >
             Optimize post timings to publish content at the perfect time for
             your audience.
           </p>
@@ -87,54 +95,70 @@ import "@fontsource-variable/dm-sans";
 
         <!-- item 5 -->
         <div
-          class="flex items-center p-4 rounded-lg bg-purple-dark md:col-span-2 md:row-span-2 md:col-start-3 md:row-start-5"
+          class="flex flex-col gap-6 items-center p-4 rounded-lg bg-purple-dark md:gap-0 md:flex-row md:col-span-2 md:row-span-2 md:col-start-3 md:row-start-5"
         >
           <img
             src="/illustration-grow-followers.webp"
             alt="grow followers"
-            class="w-48"
+            class="w-44"
           />
-          <h2 class="text-white text-3xl ml-6 font-medium">
+          <h2
+            class="text-white text-2xl ml-0 font-medium leading-6 text-center px-16 md:tracking-tightest md:ml-2 md:text-left md:px-0"
+          >
             Grow followers with non-stop content.
           </h2>
         </div>
 
         <!-- item 6 -->
         <div
-          class="flex flex-col p-4 rounded-lg bg-white justify-between md:row-span-2 md:col-start-2 md:row-start-5"
+          class="flex flex-col gap-4 p-4 rounded-lg bg-white justify-between md:gap-0 md:row-span-2 md:col-start-2 md:row-start-5"
         >
           <div class="flex flex-col gap-2">
-            <h2 class="text-5xl font-semibold tracking-tight text-black">
+            <h2
+              class="text-[42px] font-semibold tracking-tight leading-10 text-black"
+            >
               &gt;56%
             </h2>
-            <p class="font-medium">faster audience growth</p>
+            <p class="text-xs font-medium">faster audience growth</p>
           </div>
           <img
             src="/illustration-audience-growth.webp"
             alt="audience growth"
-            class="w-36"
+            class="w-28"
           />
         </div>
 
         <!-- item 7 -->
         <div
-          class="flex flex-col p-4 rounded-lg bg-yellow-light md:row-span-3 md:col-start-1 md:row-start-1"
+          class="flex flex-col items-center justify-center gap-6 p-8 md:p-4 rounded-lg bg-yellow-light md:row-span-3 md:col-start-1 md:row-start-1"
         >
-          <h2>Create and schedule content quicker.</h2>
-          <img src="/illustration-create-post.webp" alt="create post" />
+          <h2
+            class="text-2xl leading-6 font-semibold tracking-tightest md:text-3xl md:leading-7 md:font-medium"
+          >
+            Create and schedule content <span class="italic text-purple-dark"
+              >quicker.</span
+            >
+          </h2>
+          <img
+            src="/illustration-create-post.webp"
+            alt="create post"
+            class="max-w-40 place-self-start md:max-w-36 md:self-center"
+          />
         </div>
 
         <!-- item 8 -->
         <div
-          class="flex flex-col p-6 gap-2 rounded-lg bg-yellow-dark md:row-span-3 md:col-start-1 md:row-start-4"
+          class="flex flex-col items-center justify-between px-4 py-6 rounded-lg bg-yellow-dark gap-4 md:gap-0 md:row-span-3 md:col-start-1 md:row-start-4"
         >
-          <h2 class="text-3xl font-semibold leading-7 tracking-tighter">
+          <h2
+            class="text-2xl leading-6 md:text-3xl md:leading-7 mr-16 md:mr-0 font-semibold tracking-tightest"
+          >
             Write your content using AI.
           </h2>
           <img
             src="/illustration-ai-content.webp"
             alt="ai content"
-            class="max-w-44 h-auto self-center"
+            class="max-w-52 md:max-w-[9.5rem] place-self-start -mr-1"
           />
         </div>
       </div>
