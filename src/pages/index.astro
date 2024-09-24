@@ -9,64 +9,133 @@ import "@fontsource-variable/dm-sans";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     <title>Frontend Mentor | Bento grid</title>
+    <link rel="stylesheet" href="/src/styles/styles.css" />
   </head>
-  <body>
-    <div class="container mx-auto p-4 font-dm-sans">
+  <body class="bg-slate-100">
+    <div
+      class="container flex items-center justify-center min-h-screen font-dm-sans"
+    >
       <!-- grid -->
       <div
-        class="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5"
+        class="grid grid-cols-1 gap-6 md:grid-cols-4 md:grid-rows-6 max-w-screen-lg max-h-[90vh]"
       >
         <!-- item 1 -->
-        <div>
-          <h1>Social Media 10x Faster with AI</h1>
-          <img src="/illustration-five-stars.webp" alt="five stars" />
-          <p>Over 4,000 5-star reviews</p>
+        <div
+          class="flex flex-col items-center justify-center text-center p-16 rounded-lg bg-purple-dark md:col-span-2 md:row-span-2 md:col-start-2 md:row-start-1"
+        >
+          <h1 class="text-white text-4xl font-medium">
+            Social Media <span class="text-yellow-dark">10x</span>
+            <span class="italic">Faster</span> with AI
+          </h1>
+          <img
+            src="/illustration-five-stars.webp"
+            class="w-28 mt-4 mb-1"
+            alt="five stars"
+          />
+          <p class="text-white text-xs font-light">Over 4,000 5-star reviews</p>
         </div>
+
         <!-- item 2 -->
-        <div>
+        <div
+          class="flex flex-col justify-between p-4 rounded-lg bg-white md:row-span-2 md:col-start-2 md:row-start-3 overflow-hidden"
+        >
           <img
             src="/illustration-multiple-platforms.webp"
             alt="multiple platforms"
+            class="min-w-52"
           />
-          <h2>Manage multiple accounts and platforms.</h2>
+          <h2
+            class="text-2xl font-semibold tracking-tight leading-6 text-black pr-12"
+          >
+            Manage multiple accounts and platforms.
+          </h2>
         </div>
+
         <!-- item 3 -->
-        <div>
-          <h2>Maintain a consistent posting schedule.</h2>
+        <div
+          class="flex flex-col p-4 rounded-lg bg-yellow-dark md:row-span-2 md:col-start-3 md:row-start-3 overflow-hidden"
+        >
+          <h2
+            class="text-2xl font-semibold tracking-tight leading-6 text-black pr-12"
+          >
+            Maintain a consistent posting schedule.
+          </h2>
           <img
             src="/illustration-consistent-schedule.webp"
-            alt=" consitent schedule"
+            alt="consitent schedule"
+            class="mt-2"
           />
         </div>
+
         <!-- item 4 -->
-        <div>
-          <h2>Schedule to social media.</h2>
-          <img src="/illustration-schedule-posts.webp" alt="schedule posts" />
-          <p>
+        <div
+          class="flex flex-col p-6 pl-8 rounded-lg bg-purple-light md:row-span-4 md:col-start-4 md:row-start-1 overflow-hidden"
+        >
+          <h2 class="text-2xl font-semibold leading-5">
+            Schedule to social media.
+          </h2>
+          <img
+            src="/illustration-schedule-posts.webp"
+            alt="schedule posts"
+            class="min-w-60 my-4"
+          />
+          <p class="font-medium tracking-tight leading-5">
             Optimize post timings to publish content at the perfect time for
             your audience.
           </p>
         </div>
+
         <!-- item 5 -->
-        <div>
-          <img src="/illustration-grow-followers.webp" alt="grow followers" />
-          <h2>Grow followers with non-stop content.</h2>
+        <div
+          class="flex items-center p-4 rounded-lg bg-purple-dark md:col-span-2 md:row-span-2 md:col-start-3 md:row-start-5"
+        >
+          <img
+            src="/illustration-grow-followers.webp"
+            alt="grow followers"
+            class="w-48"
+          />
+          <h2 class="text-white text-3xl ml-6 font-medium">
+            Grow followers with non-stop content.
+          </h2>
         </div>
+
         <!-- item 6 -->
-        <div>
-          <h2>&gt;56%</h2>
-          <p>faster audience growth</p>
-          <img src="/illustration-audience-growth.webp" alt="audience growth" />
+        <div
+          class="flex flex-col p-4 rounded-lg bg-white justify-between md:row-span-2 md:col-start-2 md:row-start-5"
+        >
+          <div class="flex flex-col gap-2">
+            <h2 class="text-5xl font-semibold tracking-tight text-black">
+              &gt;56%
+            </h2>
+            <p class="font-medium">faster audience growth</p>
+          </div>
+          <img
+            src="/illustration-audience-growth.webp"
+            alt="audience growth"
+            class="w-36"
+          />
         </div>
+
         <!-- item 7 -->
-        <div>
+        <div
+          class="flex flex-col p-4 rounded-lg bg-yellow-light md:row-span-3 md:col-start-1 md:row-start-1"
+        >
           <h2>Create and schedule content quicker.</h2>
           <img src="/illustration-create-post.webp" alt="create post" />
         </div>
+
         <!-- item 8 -->
-        <div>
-          <h2>Write your content using AI.</h2>
-          <img src="/illustration-ai-content.webp" alt="ai content" />
+        <div
+          class="flex flex-col p-6 gap-2 rounded-lg bg-yellow-dark md:row-span-3 md:col-start-1 md:row-start-4"
+        >
+          <h2 class="text-3xl font-semibold leading-7 tracking-tighter">
+            Write your content using AI.
+          </h2>
+          <img
+            src="/illustration-ai-content.webp"
+            alt="ai content"
+            class="max-w-44 h-auto self-center"
+          />
         </div>
       </div>
     </div>
